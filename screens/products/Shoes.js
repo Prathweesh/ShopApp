@@ -7,7 +7,7 @@ const Shoes = () => {
   const navigation=useNavigation();
   const products=[
     {
-    id: 1,
+    id: 12,
     name: 'Casual Shoes Men',
     image: 'https://www.campusshoes.com/cdn/shop/products/CAMPTORQUE_22G-987_BLU-2_540x.jpg?v=1705481780',
     rating: 4.8,
@@ -21,7 +21,7 @@ const Shoes = () => {
     sellername: 'Campus Ltd.',
   },
     {
-    id: 2,
+    id: 13,
     name: 'Foraml Shoe',
     image: 'https://m.media-amazon.com/images/I/51sGdEwrHbL._SX679_.jpg',
     rating: 4.8,
@@ -35,7 +35,7 @@ const Shoes = () => {
     sellername: 'Campus Ltd.',
   },
     {
-    id: 3,
+    id: 14,
     name: 'Boots',
     image: 'https://m.media-amazon.com/images/I/51RJwPubrPL._SY625_.jpg',
     rating: 4.8,
@@ -49,7 +49,7 @@ const Shoes = () => {
     sellername: 'Campus Ltd.',
   },
     {
-    id: 4,
+    id: 15,
     name: 'Snekers',
     image: 'https://m.media-amazon.com/images/I/61N8lXYxUcL._SY625_.jpg',
     rating: 4.8,
@@ -63,7 +63,7 @@ const Shoes = () => {
     sellername: 'Campus Ltd.',
   },
     {
-    id: 5,
+    id: 16,
     name: 'Shoe Men',
     image: 'https://www.campusshoes.com/cdn/shop/products/CAMPTORQUE_22G-987_BLU-2_540x.jpg?v=1705481780',
     rating: 4.8,
@@ -117,6 +117,8 @@ const styles=StyleSheet.create({
     backgroundColor:'#fff'
   },
   productContainer: {
+    backgroundColor:'#fff',
+    marginTop:10,
     marginRight: 15,
     alignItems: 'center',
     height:350,

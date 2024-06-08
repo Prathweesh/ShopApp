@@ -169,6 +169,7 @@ const Cart = () => {
             selectedItems.length > 0 ? styles.checkoutButtonEnabled : styles.checkoutButtonDisabled,
         ]}
         disabled={selectedItems.length === 0}
+        onPress={()=>{alert('You Will be Redirected To Paymnet options Later')}}
         >
         <Text
             style={[
@@ -277,7 +278,7 @@ const styles = StyleSheet.create({
     marginTop: 20,
     padding: 20,
     borderWidth: 1,
-    backgroundColor:'#CFCFCF',
+    backgroundColor:'#fffef5',
     borderColor: '#e1e1e1',
     borderRadius: 10,
   },

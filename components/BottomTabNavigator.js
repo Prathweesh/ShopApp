@@ -1,5 +1,5 @@
 import React from 'react';
-import { StyleSheet, View ,Text, Pressable,} from 'react-native';
+import { StyleSheet, View ,Text, Pressable,SafeAreaView } from 'react-native';
 import { createBottomTabNavigator } from '@react-navigation/bottom-tabs';
 import { Ionicons, FontAwesome,MaterialIcons,MaterialCommunityIcons } from '@expo/vector-icons';
 import { useNavigation } from '@react-navigation/native';
@@ -13,6 +13,7 @@ const Tab = createBottomTabNavigator();
 const MyCustomHomeHeader =()=>{
 const navigation=useNavigation();
   return(
+    <SafeAreaView>
     <View style={styles.headerContainer}>      
       <View style={styles.headerCenter}>
         <View style={{marginRight:10}}>
@@ -30,6 +31,7 @@ const navigation=useNavigation();
       </Pressable>  
       </View>
     </View>
+    </SafeAreaView>
   );
 }
 
@@ -40,7 +42,7 @@ const navigation=useNavigation();
      <Tab.Navigator
         screenOptions={{
         headerShown: true,
-        tabBarActiveTintColor: 'white',
+        tabBarActiveTintColor: 'black',
         tabBarInactiveTintColor: 'grey',
         tabBarStyle: {
         height: 70,
@@ -48,23 +50,22 @@ const navigation=useNavigation();
       }}>
         <Tab.Screen name="Home" component={Home} 
         options={{header: MyCustomHomeHeader,
-        tabBarIcon: () => <MaterialCommunityIcons  name='home-circle' size={25} color="black" />, 
+        tabBarIcon: () => <MaterialCommunityIcons  name='home-circle' size={25} color="grey" />, 
         tabBarActiveBackgroundColor: '#1877F2',   }}/>
 
         <Tab.Screen name="My Cart" component={Cart} 
-        options={{tabBarIcon: () => <Ionicons name='cart' size={25} color="black" />,
+        options={{tabBarIcon: () => <Ionicons name='cart' size={25} color="grey" />,
         tabBarActiveBackgroundColor:'#1877F2' ,
-        headerLeft: () => <Ionicons name="arrow-back" size={24} color="black" />, 
         headerRight: () => <Text style={styles.cancelText}>Cancel</Text>, 
         }} />
 
         <Tab.Screen name="Notifications" component={Notifications} 
-        options={{tabBarIcon: () => <Ionicons name='notifications' size={25} color="black" />,
+        options={{tabBarIcon: () => <Ionicons name='notifications' size={25} color="grey" />,
         tabBarActiveBackgroundColor:'#1877F2' 
         }}/>
         <Tab.Screen name="Profile" component={Profile} 
         options={{
-        tabBarIcon: () => <Ionicons name='person' size={25} color="black" />,
+        tabBarIcon: () => <Ionicons name='person' size={25} color="grey" />,
         tabBarActiveBackgroundColor:'#1877F2' 
         }}/>
       </Tab.Navigator>
@@ -75,7 +76,7 @@ const navigation=useNavigation();
 
 const styles = StyleSheet.create({
   headerContainer: {
-    marginTop:40,
+    //marginTop:40,
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'space-between',

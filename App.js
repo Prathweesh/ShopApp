@@ -1,5 +1,5 @@
-import React from 'react';
-import { Vibration,View,Text ,StyleSheet, Pressable} from 'react-native';
+import React, {useEffect}from 'react';
+import {View,Text ,StyleSheet, Pressable,StatusBar} from 'react-native';
 import { NavigationContainer } from '@react-navigation/native';
 import { createNativeStackNavigator } from '@react-navigation/native-stack';
 import BottomTabNavigator from './components/BottomTabNavigator';
@@ -11,6 +11,10 @@ import Settings from './screens/Settings';
 const Stack =createNativeStackNavigator ();
 
  const App=()=> {
+  useEffect(() => {
+    StatusBar.setBackgroundColor('#1877F2'); 
+    StatusBar.setBarStyle('light-content'); // White text for dark background
+  }, []);
   return (
     <NavigationContainer>
       <Stack.Navigator>

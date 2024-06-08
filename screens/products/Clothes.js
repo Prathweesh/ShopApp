@@ -7,7 +7,7 @@ const Clothes = () => {
   const navigation=useNavigation();
   const products=[
     {
-    id: 1,
+    id: 2,
     name: 'Casual Black T-shirt',
     image: 'https://m.media-amazon.com/images/I/31CkyPUs7yL._AC_UL320_.jpg',
     rating: 4.8,
@@ -21,7 +21,7 @@ const Clothes = () => {
     sellername: 'Appario Ltd.',
   },
     {
-    id: 2,
+    id: 7,
     name: 'Casual  T-shirt',
     image: 'https://www.beyoung.in/api/cache/catalog/products/plain_new_update_images_2_5_2022/pick_any_4_plain_t-shirt_combo_base%20_29_07_2023_700x933.jpg',
     rating: 4.8,
@@ -35,7 +35,7 @@ const Clothes = () => {
     sellername: 'Appario Ltd.',
   },
     {
-    id: 3,
+    id: 8,
     name: 'T-shirt',
     image: 'https://m.media-amazon.com/images/I/517wa7Es8uL._SY741_.jpg',
     rating: 4.8,
@@ -49,7 +49,7 @@ const Clothes = () => {
     sellername: 'Appario Ltd.',
   },
     {
-    id: 4,
+    id: 9,
     name: 'Black T-shirt',
     image: 'https://m.media-amazon.com/images/I/51rktXdRynL._SY741_.jpg',
     rating: 4.8,
@@ -63,8 +63,8 @@ const Clothes = () => {
     sellername: 'Appario Ltd.',
   },
     {
-    id: 5,
-    name: 'Casual Black T-shirt',
+    id: 10,
+    name: 'Casual shirt',
     image: 'https://m.media-amazon.com/images/I/31CkyPUs7yL._AC_UL320_.jpg',
     rating: 4.8,
     totalRatings: 1089,
@@ -77,7 +77,7 @@ const Clothes = () => {
     sellername: 'Appario Ltd.',
   },
     {
-    id: 6,
+    id: 11,
     name: 'Casual Black T-shirt',
     image: 'https://m.media-amazon.com/images/I/31CkyPUs7yL._AC_UL320_.jpg',
     rating: 4.8,
@@ -129,6 +129,8 @@ const styles=StyleSheet.create({
     marginVertical: 10,
   },
   productContainer: {
+     backgroundColor:'#fff',
+    marginTop:10,
     marginRight: 15,
     alignItems: 'center',
     height:350,
